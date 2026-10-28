@@ -1,13 +1,16 @@
 public class Main {
     public static void main(String[] args) {
+        // касата продава
         Station lions = new Station();
-        Receipt receipt = new Receipt();
         Ticket a = lions.sell("S", "");
-        receipt.print(a);
         Ticket b = lions.sell("D", "");
-        receipt.print(b);
         Ticket c = lions.sell("M", "Maria");
+        // бележките
+        Receipt receipt = new Receipt();
+        receipt.print(a);
+        receipt.print(b);
         receipt.print(c);
+        // валидиране и контрола
         a.validate(485);
         b.validate(485);
         Inspector ivan = new Inspector();
@@ -15,6 +18,7 @@ public class Main {
         ivan.check(a, 600);
         ivan.check(b, 600);
         ivan.check(c, 600);
+        // счетоводството
         Report report = new Report();
         System.out.println(report.text(lions));
         report.save(lions, "report.txt");
