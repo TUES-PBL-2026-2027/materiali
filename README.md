@@ -11,7 +11,7 @@
 Веднъж, в `Documents`:
 
 ```
-git clone https://github.com/TUES-OOP-2026-2027/materiali.git
+git clone https://github.com/TUES-PBL-2026-2027/materiali.git
 ```
 
 Всяка седмица, в `materiali`: `git pull`. Файлът се копира от папката `oop`, например:
